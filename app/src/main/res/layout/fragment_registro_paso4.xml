@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="22dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agrega fotos de tu estacionamiento"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- SUBTÍTULO -->
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Las imágenes ayudan a los conductores a conocer el espacio.\nSube fotos claras y bien iluminadas desde diferentes ángulos."
+            android:textColor="#555"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp" />
+
+        <!-- BOTÓN AGREGAR FOTOS -->
+        <LinearLayout
+            android:id="@+id/btnAgregarFotos"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/bg_boton_fotos"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="18dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add"
+                app:tint="#3E3D3D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar fotos"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- BOTÓN TOMAR FOTOS -->
+        <LinearLayout
+            android:id="@+id/btnTomarFotos"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/bg_boton_fotos"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="18dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/photo_camera"
+                app:tint="#3E3D3D" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomar fotos nuevas"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- ESPACIO GRANDE PARA BAJAR BOTONES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="250dp">
+
+            <!-- PROGRESS BAR -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="@color/melon"
+                android:layout_marginTop="40dp" />
+
+            <!-- BOTONES ATRÁS / SIGUIENTE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <!-- ATRÁS -->
+                <TextView
+                    android:id="@+id/btnAtras"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Atrás"
+                    android:textColor="#777"
+                    android:textSize="17sp"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- SIGUIENTE -->
+                <Button
+                    android:id="@+id/btnSiguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Siguiente"
+                    android:backgroundTint="@color/melon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

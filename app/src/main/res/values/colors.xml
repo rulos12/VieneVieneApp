@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gris">#4b4b4b</color>
+    <color name="melon">#f26f5c</color>
+    <color name="melonText">#f59881</color>
+
+    <color name="estado_confirmada">#2196F3</color>
+    <color name="estado_completada">#4CAF50</color>
+    <color name="estado_pendiente">#FF9800</color>
+
+
+</resources>
+

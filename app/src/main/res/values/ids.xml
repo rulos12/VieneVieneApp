@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottomSheet" type="id" />
+    <item name="txtNombre" type="id" />
+    <item name="txtDireccion" type="id" />
+    <item name="btnReservar" type="id" />
+    <item name="txtPrecio" type="id" />
+    <item name="sombreEst" type="id" />
+</resources>

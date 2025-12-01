@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <!-- Imagen del estacionamiento -->
+        <ImageView
+            android:id="@+id/imgEstacionamiento"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_google_background" />
+
+        <ImageView
+            android:id="@+id/iconFavorito"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_favoritos"
+            android:padding="8dp"
+            android:contentDescription="Agregar a favoritos" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:text="Estacionamiento Cosmopolita"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:text="Dirección"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:text="$15 MXN por hora"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="330dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/melon"
+        android:text="Reservar" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_Reservas"
+        android:icon="@drawable/event"
+        android:title="Reservas"/>
+
+    <item
+        android:id="@+id/nav_Estacionamiento"
+        android:icon="@drawable/garage"
+        android:title="Garaje"/>
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil"/>
+</menu>
